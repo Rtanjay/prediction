@@ -49,7 +49,7 @@ data = ({'island': island ,
          'gender': gender
         })
 
-input_df = pd.DataFrame(data)
+input_df = pd.DataFrame(data , index = 0)
 
 with st.expander("Input Data"):
   st.write("**Input Data** :")
