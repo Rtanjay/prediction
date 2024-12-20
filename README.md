@@ -1,9 +1,6 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 Prediction App
 
-Description of the app ...
+This is a Prediction App
 
 ## Demo App
 
