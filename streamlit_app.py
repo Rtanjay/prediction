@@ -45,5 +45,12 @@ data = ({'island': island ,
          'bill_len_mm' : bill_len_mm ,
          'bill_depth_mm': bill_depth_mm,
          'flipper_length_mm': flipper_length_mm,
-         'body_mass_g': body_mass_g 
+         'body_mass_g': body_mass_g,
+         'gender': gender
         })
+
+input_df = pd.DataFrame(data)
+
+with st.expander("Input Data"):
+  st.write("**Input Data** :")
+  input_df
