@@ -28,7 +28,7 @@ with st.expander("Data Visualisations ! "):
 # Data Preparations:
 
 with st.sidebar:
-  st.header("Inpur features")
+  st.header("Input features")
 
   island = st.selectbox('Islands' , ('Torgersen', 'Biscoe', 'Dream'))
   gender = st.selectbox('Gender' , ('Male', 'Female'))
