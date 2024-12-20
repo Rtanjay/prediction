@@ -12,9 +12,15 @@ with st.expander("Data"):
   df
 
   st.write("**Y**")
+  # species
   y = df["species"]
   y
   
   st.write("**X**")
+  # "island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   x = df.drop("species", axis=1, inplace = False)
   x
+
+with expander ("Data Visualisations ! "):
+  
+  st.scatter_chart(data = df, x = "bill_length_mm" , y = "body_mass_g", color = "species")
