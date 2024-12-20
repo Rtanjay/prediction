@@ -33,7 +33,7 @@ with st.sidebar:
   island = st.selectbox('Islands' , ('Torgersen', 'Biscoe', 'Dream'))
   gender = st.selectbox('Gender' , ('Male', 'Female'))
 
-  bill_len_mm = st.slider('Bill Length (mm)' , 32.1 , 59.64 , 43.9)
+  bill_length_mm = st.slider('Bill Length (mm)' , 32.1 , 59.64 , 43.9)
   bill_depth_mm = st.slider('Bill Depth (mm)' , 13.1 , 21.5 , 17.2)
   flipper_length_mm = st.slider('Flipper Length (mm)' , 172.0 , 230.0 , 201.0)
   body_mass_g = st.slider('Body Mass (gm)', 2700.0 , 6300.0 , 4207.0)
@@ -42,7 +42,7 @@ with st.sidebar:
 #create a Dataframe 
 
 data = ({'island': island ,
-         'bill_len_mm' : bill_len_mm ,
+         'bill_length_mm' : bill_length_mm ,
          'bill_depth_mm': bill_depth_mm,
          'flipper_length_mm': flipper_length_mm,
          'body_mass_g': body_mass_g,
@@ -52,7 +52,7 @@ data = ({'island': island ,
 input_df = pd.DataFrame(data , index = [0])
 
 # combining the input datset with raw data
-input_penguins = pd.concat([df,input_df], axis = 0)
+input_penguins = pd.concat([x,input_df], axis = 0)
 
 with st.expander("Input Data"):
   st.write("**Input Data** :")
