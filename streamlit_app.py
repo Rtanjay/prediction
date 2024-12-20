@@ -46,11 +46,21 @@ data = ({'island': island ,
          'bill_depth_mm': bill_depth_mm,
          'flipper_length_mm': flipper_length_mm,
          'body_mass_g': body_mass_g,
-         'gender': gender
+         'sex': gender
         })
 
 input_df = pd.DataFrame(data , index = [0])
 
+# combining the input datset with raw data
+input_penguins = pd.concat([df,input_df], axis = 0)
+
 with st.expander("Input Data"):
   st.write("**Input Data** :")
   input_df
+  st.write("**Input Penguins** :")
+  input_penguins
+
+# encoding the Data Features
+encode = ['island' , 'sex']
+
+
