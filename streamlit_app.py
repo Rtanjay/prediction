@@ -24,3 +24,8 @@ with st.expander("Data"):
 with st.expander("Data Visualisations ! "):
   
   st.scatter_chart(data = df, x = "bill_length_mm" , y = "body_mass_g", color = "species")
+
+# Data Preparations:
+
+with st.sidebar:
+  st.header("Data Preps")
