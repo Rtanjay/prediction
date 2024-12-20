@@ -21,6 +21,6 @@ with st.expander("Data"):
   x = df.drop("species", axis=1, inplace = False)
   x
 
-with expander ("Data Visualisations ! "):
+with st.expander("Data Visualisations ! "):
   
   st.scatter_chart(data = df, x = "bill_length_mm" , y = "body_mass_g", color = "species")
