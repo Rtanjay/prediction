@@ -17,7 +17,7 @@ with st.expander("Data"):
   y
   
   st.write("**X**")
-  # "island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
+  # Columns in Data set: "island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   x = df.drop("species", axis=1, inplace = False)
   x
 
@@ -28,4 +28,9 @@ with st.expander("Data Visualisations ! "):
 # Data Preparations:
 
 with st.sidebar:
-  st.header("Data Preps")
+  st.header("Inpur features")
+
+  island = st.selectbox('Islands' , ('Torgersen', 'Biscoe', 'Dream'))
+  gender = st.selectbox('Gender' , ('Male', 'Female'))
+  
+
