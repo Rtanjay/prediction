@@ -31,7 +31,7 @@ with st.sidebar:
   st.header("Input features")
 
   island = st.selectbox('Islands' , ('Torgersen', 'Biscoe', 'Dream'))
-  gender = st.selectbox('Gender' , ('Male', 'Female'))
+  gender = st.selectbox('Gender' , ('male', 'female'))
 
   bill_length_mm = st.slider('Bill Length (mm)' , 32.1 , 59.64 , 43.9)
   bill_depth_mm = st.slider('Bill Depth (mm)' , 13.1 , 21.5 , 17.2)
