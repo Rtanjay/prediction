@@ -52,7 +52,7 @@ data = ({'island': island ,
 input_df = pd.DataFrame(data , index = [0])
 
 # combining the input datset with raw data
-input_penguins = pd.concat([x,input_df], axis = 0)
+input_penguins = pd.concat([x,input_df], axis = 0 , index = 0)
 
 with st.expander("Input Data"):
   st.write("**Input Data** :")
