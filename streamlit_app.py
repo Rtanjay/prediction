@@ -60,8 +60,10 @@ with st.expander("Input Data"):
   st.write("**Input Penguins** :")
   input_penguins
 
-# encoding the Data Features
-encode = ['island' , 'sex']
-df_penguins = pd.get_dummies(input_penguins, prefix = encode, dtype=int , dummy_na = False)
-df_penguins
+with st.expander("Encoded Data:"):
+  st.write("**Encoded Data**")
+  # encoding the Data Features
+  encode = ['island' , 'sex']
+  df_penguins = pd.get_dummies(input_penguins, prefix = encode, dtype=int , dummy_na = False)
+  df_penguins
 
